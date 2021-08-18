@@ -1,0 +1,58 @@
+* {
+  padding-inline-start: 0px;
+}
+.conteiner {
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.Collapsible {
+  margin: 0 auto;
+  background-color: aquamarine;
+  border: black 1px solid;
+  width: 500px;
+}
+.Collapsible-row {
+  background-color: cornsilk;
+  border: black 1px solid;
+  padding-bottom: 20px;
+}
+.btn {
+  display: block;
+  border: black 1px solid;
+  padding: 7px;
+  border-radius: 6px;
+  margin: 20px;
+  background-color: steelblue;
+  color: white;
+}
+.action {
+  box-shadow: 0 0 0 0.25rem rgb(49 132 253 / 50%);
+}
+.promt {
+  display: block;
+  min-width: 300px;
+  background-color: floralwhite;
+  border: black 1px solid;
+  margin-top: 0px;
+  overflow: hidden;
+  animation-name: open;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  max-height: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 20px;
+}
+.hiden {
+  animation-direction: reverse;
+}
+@keyframes open {
+  0% {
+    max-height: 1px;
+  }
+  100% {
+    max-height: 400px;
+  }
+}
