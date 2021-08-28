@@ -13,13 +13,9 @@ export default class Collapsible {
       </dir>`;
   }
 
-  static get widgetSelector() {
-    return ".Collapsible";
-  }
-
   bindToDOM() {
     this.parentEl.innerHTML = this.constructor.markup;
-    this.widget = this.parentEl.querySelector(this.constructor.widgetSelector);
+    this.widget = this.parentEl.querySelector(".Collapsible");
 
     this.widget.addEventListener("click", (evt) => this.onClick(evt));
   }
@@ -39,7 +35,8 @@ export default class Collapsible {
             Obcaecati assumenda hic fuga porro pariatur.`;
 
         this.widget.querySelector(".Collapsible-row").append(prompt);
-      } else if (
+      }
+      if (
         !e.target.closest(".btn").classList.contains("action") &&
         this.parentEl.querySelector(".promt")
       ) {
